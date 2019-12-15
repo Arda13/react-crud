@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const LandingPage = () => (
     <div className="jumbotron">
@@ -7,7 +8,7 @@ const LandingPage = () => (
         <hr className="my-4" />
         <p>It uses utility classes for typography and spacing to space content out within the larger container..</p>
         <p className="lead">
-            <a className="btn btn-primary btn-lg" href="#" role="button"> Learn More</a>
+            <Link to="/products" className="btn btn-primary btn-lg" href="#" role="button"> Learn More</Link>
         </p>
     </div>
 );
