@@ -11,6 +11,7 @@ import NotFound from './components/NotFound';
 import Products from './containers/Products';
 import ViewProduct from './containers/ViewProduct';
 import CreateProduct from './containers/CreateProduct';
+import EditProduct from './containers/EditProduct';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route exact path="/" component={LandingPage} />
           <Route exact path="/products" component={Products} />
           <Route exact path="/products/create" component={CreateProduct} />
+          <Route path="/products/:id/edit" component={EditProduct} />
           <Route path="/products/:id" component={ViewProduct}/>
           <Route path="*" component={NotFound}/>>
         </Switch>
